@@ -1,0 +1,111 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("/src/image/BG-1.png") center/cover no-repeat;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  position: relative;
+  filter: grayscale(100%); 
+}
+
+.dashboard h2 {
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, #ffffff, #c0c0c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  animation: fadeDown 0.8s ease-out;
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  padding: 3rem;
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
+  animation: slideUp 0.9s ease-in-out;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.dashboard-card h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.dashboard-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #d0d0d0;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tabs button {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #111;
+  width: 48%;
+  height: 120px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.tabs button span {
+  font-size: 1.2rem;
+}
+
+.tabs button:hover {
+  transform: translateY(-3px);
+  background: #000;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

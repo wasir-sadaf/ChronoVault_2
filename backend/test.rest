@@ -1,0 +1,18 @@
+### Signup new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "huzaifa",
+  "email": "huzaifa@gmail.com",
+  "password": "1234"
+}
+
+### Login existing user
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "huzaifa@gmail.com",
+  "password": "1234"
+}
